@@ -18,3 +18,4 @@ The Recipe Finder App is a web application that allows users to search for recip
 - The Meal Database API: Provides recipe data for the app.
 
 # TastyRecipeFinder-
+# TastyRecipeFinder-

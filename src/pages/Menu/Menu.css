@@ -1,0 +1,64 @@
+#categoryContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.food-box {
+    cursor: pointer;
+    border: 1px solid #444; /* Darkened border */
+    width: 18rem;
+    border-radius: 10px; /* Slightly larger border radius */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 3D effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(145deg, #f0f0f0, #d9d9d9); /* Gradient background */
+}
+
+.food-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-color: #222; /* Darker border on hover */
+}
+
+.food-box img {
+    width: 100%;
+    transition: border-radius 0.3s ease;
+}
+
+.food-box:hover img {
+    border-radius: 10px;
+}
+
+.food-box p {
+    position: absolute;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.8); /* Darker background */
+    color: white;
+    width: 100%;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.food-box:hover p {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.9); /* Darker background on hover */
+}
+
+@media (max-width: 568px) {
+    .food-box {
+        width: 9rem;
+    }
+
+    .food-box p {
+        font-size: 16px;
+    }
+}

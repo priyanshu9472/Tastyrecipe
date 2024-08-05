@@ -1,0 +1,72 @@
+#mealContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.meal-box {
+    position: relative;
+    width: 250px;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(145deg, #f6f8fa, #e9ecef);
+}
+
+.meal-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.meal-box img {
+    width: 100%;
+    border-radius: 5px;
+    transition: border-radius 0.3s ease;
+}
+
+.meal-box:hover img {
+    border-radius: 10px;
+}
+
+.meal-box a {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.meal-box a:hover {
+    background-color: #ff6347; /* tomato color */
+    color: white;
+}
+
+.video-container {
+    width: 500px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media (max-width: 568px) {
+    .meal-box {
+        width: 100%;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+}
